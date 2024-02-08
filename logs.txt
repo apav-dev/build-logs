@@ -1,0 +1,302 @@
+2024-01-30T18:42:12Z: I0130 18:42:12.745867 server.go:113] yhttp.Server Listening on port 8080...
+2024-01-30T18:42:17Z: Processing build 2067312
+2024-01-30T18:42:18Z: Note: checking out 'fa783d94e201d6da410dec99a1bae5f260165a55'.
+2024-01-30T18:42:18Z: 
+2024-01-30T18:42:18Z: You are in 'detached HEAD' state. You can look around, make experimental
+2024-01-30T18:42:18Z: changes and commit them, and you can discard any commits you make in this
+2024-01-30T18:42:18Z: state without impacting any branches by performing another checkout.
+2024-01-30T18:42:18Z: 
+2024-01-30T18:42:18Z: If you want to create a new branch to retain commits you create, you may
+2024-01-30T18:42:18Z: do so (now or later) by using -b with the checkout command again. Example:
+2024-01-30T18:42:18Z: 
+2024-01-30T18:42:18Z:   git checkout -b new_branch_name
+2024-01-30T18:42:18Z: 
+2024-01-30T18:42:18Z: HEAD is now at fa783d9... chat panel styling fix
+2024-01-30T18:42:18Z: #1 [internal] load build definition from Dockerfile
+2024-01-30T18:42:18Z: #1 sha256:b1ccd5e8cffa78b49dcf69342d7fc1e4f7516f1e4b5bcc150569fe17a83592b7
+2024-01-30T18:42:18Z: #1 transferring dockerfile: 1.35kB done
+2024-01-30T18:42:18Z: #1 DONE 0.0s
+2024-01-30T18:42:18Z: 
+2024-01-30T18:42:18Z: #2 [internal] load .dockerignore
+2024-01-30T18:42:18Z: #2 sha256:587dac7334aa9c6fd504e6d7796aae4cfef36db57bbb1ceda7c4dc7e35a437b6
+2024-01-30T18:42:18Z: #2 transferring context: 2B done
+2024-01-30T18:42:18Z: #2 DONE 0.0s
+2024-01-30T18:42:18Z: 
+2024-01-30T18:42:18Z: #3 resolve image config for docker.io/docker/dockerfile:experimental
+2024-01-30T18:42:18Z: #3 sha256:401713457b113a88eb75a6554117f00c1e53f1a15beec44e932157069ae9a9a3
+2024-01-30T18:42:19Z: #3 DONE 0.1s
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #4 docker-image://docker.io/docker/dockerfile:experimental@sha256:600e5c62eedff338b3f7a0850beb7c05866e0ef27b2d2e8c02aa468e78496ff5
+2024-01-30T18:42:19Z: #4 sha256:5eb5c5fe835d3b1aad89bd43d1d83f5bf7274754ac5f0265ecef704687cb946d
+2024-01-30T18:42:19Z: #4 CACHED
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #5 [internal] load metadata for gcr.io/dynamicgcr-yextenv-prod/yextci/yextci-builder:stable
+2024-01-30T18:42:19Z: #5 sha256:fbd1176ac166b52df4f4156e7636ec4c63352f7b5d05d177cdede8d63238e9d4
+2024-01-30T18:42:19Z: #5 ...
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #6 [auth] dynamicgcr-yextenv-prod/yextci/yextci-builder:pull token for gcr.io
+2024-01-30T18:42:19Z: #6 sha256:eaf3579fc9cafd5519ac1b5a442a868b35094aef3ff38360eac89f5831647db8
+2024-01-30T18:42:19Z: #6 DONE 0.0s
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #5 [internal] load metadata for gcr.io/dynamicgcr-yextenv-prod/yextci/yextci-builder:stable
+2024-01-30T18:42:19Z: #5 sha256:fbd1176ac166b52df4f4156e7636ec4c63352f7b5d05d177cdede8d63238e9d4
+2024-01-30T18:42:19Z: #5 DONE 0.4s
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #7 [ 1/16] FROM gcr.io/dynamicgcr-yextenv-prod/yextci/yextci-builder:stable@sha256:0e06bf7bd762ff51acdc4d5dbca241d39ca5ee6c63733f6fbb3434b2bc2aac67
+2024-01-30T18:42:19Z: #7 sha256:de23acd9f84d1d2b80e5724db5f9843824e258ad8b50801b015fa248bfa13c31
+2024-01-30T18:42:19Z: #7 CACHED
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #8 [internal] load build context
+2024-01-30T18:42:19Z: #8 sha256:338ecb0aca4c5058dbd25412b21c79bb170c7ace10dc121bbcc6dabf8656ffdb
+2024-01-30T18:42:19Z: #8 transferring context: 4.76MB 0.1s done
+2024-01-30T18:42:19Z: #8 DONE 0.1s
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #9 [ 2/16] COPY --chown=yextci repo/package.json /opt/buildhome/repo/package.json
+2024-01-30T18:42:19Z: #9 sha256:b235cba367826b7ed4db854be35bca37be746968f6a290ed41fa2585d5987924
+2024-01-30T18:42:19Z: #9 CACHED
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #10 [ 3/16] COPY --chown=yextci repo/package-lock.json /opt/buildhome/repo/package-lock.json
+2024-01-30T18:42:19Z: #10 sha256:b6152eea197b4fbc6441c85b0bf42051c1b50f6683164c5858c6bdc558c40621
+2024-01-30T18:42:19Z: #10 CACHED
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #11 [ 4/16] COPY --chown=yextci user_commands/env_vars.sh /scripts/user_commands/env_vars.sh
+2024-01-30T18:42:19Z: #11 sha256:e2bb1210ae668e8c58ca6162d3e747bde3aaf967c24b33bb05bc7227ce9b5adf
+2024-01-30T18:42:19Z: #11 DONE 0.1s
+2024-01-30T18:42:19Z: 
+2024-01-30T18:42:19Z: #12 [ 5/16] RUN /scripts/mark-builderror.sh 'cat /scripts/user_commands/env_vars.sh | bash'
+2024-01-30T18:42:19Z: #12 sha256:d9819bf9a969ec956ae31f9e9f98ff754b1b2b199b8ea6d288ef8d0c7ad60b20
+2024-01-30T18:42:20Z: #12 DONE 1.0s
+2024-01-30T18:42:20Z: 
+2024-01-30T18:42:20Z: #13 [ 6/16] RUN /scripts/set_node_version.sh /opt/buildhome/repo/.
+2024-01-30T18:42:20Z: #13 sha256:f91163c1226468f474e2a6df894af956d770af339c979d4236a644c805a6337e
+2024-01-30T18:42:21Z: #13 0.899 The current specified node version is v12.22.9. Checking if a different node version is specified elsewhere...
+2024-01-30T18:42:21Z: #13 0.912 Using node v17 from package.json engines node specification.
+2024-01-30T18:42:22Z: #13 1.434 v17.9.1 is already installed.
+2024-01-30T18:42:22Z: #13 2.167 Now using node v17.9.1 (npm v8.11.0)
+2024-01-30T18:42:23Z: #13 2.419 default -> v17.9.1 *
+2024-01-30T18:42:23Z: #13 2.875 npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+2024-01-30T18:42:25Z: #13 4.817 
+2024-01-30T18:42:25Z: #13 4.817 added 59 packages, and audited 60 packages in 2s
+2024-01-30T18:42:25Z: #13 4.818 
+2024-01-30T18:42:25Z: #13 4.818 5 packages are looking for funding
+2024-01-30T18:42:25Z: #13 4.818   run `npm fund` for details
+2024-01-30T18:42:25Z: #13 4.819 
+2024-01-30T18:42:25Z: #13 4.819 found 0 vulnerabilities
+2024-01-30T18:42:25Z: #13 4.820 npm notice 
+2024-01-30T18:42:25Z: #13 4.820 npm notice New major version of npm available! 8.11.0 -> 10.4.0
+2024-01-30T18:42:25Z: #13 4.820 npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.4.0>
+2024-01-30T18:42:25Z: #13 4.820 npm notice Run `npm install -g npm@10.4.0` to update!
+2024-01-30T18:42:25Z: #13 4.820 npm notice 
+2024-01-30T18:42:25Z: #13 DONE 4.9s
+2024-01-30T18:42:25Z: 
+2024-01-30T18:42:25Z: #14 [ 7/16] WORKDIR /opt/buildhome/repo/.
+2024-01-30T18:42:25Z: #14 sha256:06e1d3a4207ecb0f987b861f1b5f9a353d939ac0589706262bfdb058656c805d
+2024-01-30T18:42:25Z: #14 DONE 0.1s
+2024-01-30T18:42:25Z: 
+2024-01-30T18:42:25Z: #15 [ 8/16] COPY --chown=yextci user_commands/install_deps.sh /scripts/user_commands/install_deps.sh
+2024-01-30T18:42:25Z: #15 sha256:af0914cc68f12101d22a7b5d9ba7a4bbf6846d87c2f1fa034dd2f3d8cfce794a
+2024-01-30T18:42:25Z: #15 DONE 0.1s
+2024-01-30T18:42:25Z: 
+2024-01-30T18:42:25Z: #16 [ 9/16] RUN --mount=type=ssh,id=deps_key,uid=2500 /scripts/mark-builderror.sh '/scripts/user_commands/install_deps.sh'
+2024-01-30T18:42:25Z: #16 sha256:592737c6d1fb2d32f9583f6dd491a45e8b06339bdf7bd2c1d9a38a9b53e918c8
+2024-01-30T18:42:26Z: #16 0.894 /scripts/user_commands/install_deps.sh: line 2: [: npm: binary operator expected
+2024-01-30T18:43:08Z: #16 42.42 
+2024-01-30T18:43:08Z: #16 42.42 added 873 packages, and audited 874 packages in 41s
+2024-01-30T18:43:08Z: #16 42.42 
+2024-01-30T18:43:08Z: #16 42.42 247 packages are looking for funding
+2024-01-30T18:43:08Z: #16 42.42   run `npm fund` for details
+2024-01-30T18:43:08Z: #16 42.47 
+2024-01-30T18:43:08Z: #16 42.47 12 vulnerabilities (1 low, 8 moderate, 2 high, 1 critical)
+2024-01-30T18:43:08Z: #16 42.47 
+2024-01-30T18:43:08Z: #16 42.47 To address all issues, run:
+2024-01-30T18:43:08Z: #16 42.47   npm audit fix
+2024-01-30T18:43:08Z: #16 42.47 
+2024-01-30T18:43:08Z: #16 42.47 Run `npm audit` for details.
+2024-01-30T18:43:08Z: #16 DONE 42.8s
+2024-01-30T18:43:08Z: 
+2024-01-30T18:43:08Z: #17 [10/16] COPY --chown=yextci repo /opt/buildhome/repo
+2024-01-30T18:43:08Z: #17 sha256:cb9b27337c25ffafc9440d579f09634c710bec243633e04578fdcb34d1c89656
+2024-01-30T18:43:08Z: #17 DONE 0.1s
+2024-01-30T18:43:08Z: 
+2024-01-30T18:43:08Z: #18 [11/16] COPY --chown=yextci user_commands/build_setup.sh /scripts/user_commands/build_setup.sh
+2024-01-30T18:43:08Z: #18 sha256:95d9a46909eaa31a2ac0130f446ce417a59aa932c5c32bed121f589b563b5dd2
+2024-01-30T18:43:08Z: #18 DONE 0.0s
+2024-01-30T18:43:08Z: 
+2024-01-30T18:43:08Z: #19 [12/16] RUN --mount=type=ssh,id=deps_key,uid=2500 /scripts/mark-builderror.sh '/scripts/user_commands/build_setup.sh'
+2024-01-30T18:43:08Z: #19 sha256:5116764e3363250214e685c99dc460451699c3d4530a1e3cf33e0d70ffacccf9
+2024-01-30T18:43:09Z: #19 DONE 0.8s
+2024-01-30T18:43:09Z: 
+2024-01-30T18:43:09Z: #20 [13/16] COPY --chown=yextci user_commands/build.sh /scripts/user_commands/build.sh
+2024-01-30T18:43:09Z: #20 sha256:055d5f3f09476dcab02d0213d563a56d7b20a22cbf08172c5e60f83da6078c2f
+2024-01-30T18:43:09Z: #20 DONE 0.0s
+2024-01-30T18:43:09Z: 
+2024-01-30T18:43:09Z: #21 [14/16] RUN --mount=type=ssh,id=deps_key,uid=2500 /scripts/mark-builderror.sh '/scripts/user_commands/build.sh'
+2024-01-30T18:43:09Z: #21 sha256:ef3364b8a1af57ad3dd54ccfdaaf587396211e075a48beaf38230f3a1b8f3c03
+2024-01-30T18:43:10Z: #21 0.850 /scripts/user_commands/build.sh: line 2: [: too many arguments
+2024-01-30T18:43:10Z: #21 1.319 
+2024-01-30T18:43:10Z: #21 1.319 > pages-starter-react-locations@0.0.0 build:local
+2024-01-30T18:43:10Z: #21 1.319 > vite build
+2024-01-30T18:43:10Z: #21 1.319 
+2024-01-30T18:43:11Z: #21 2.470 vite v3.1.0 building for production...
+2024-01-30T18:43:11Z: #21 2.476 
+2024-01-30T18:43:11Z: #21 2.476                   :=*#%@@@@@%#+-:
+2024-01-30T18:43:11Z: #21 2.476              :=#@@%*+==-----=+*#%@%*-.
+2024-01-30T18:43:11Z: #21 2.476           :*@%*-.                 :=*@%+.
+2024-01-30T18:43:11Z: #21 2.476        .=%@+:                         -#@#=
+2024-01-30T18:43:11Z: #21 2.476       +@@=                              .+@%-
+2024-01-30T18:43:11Z: #21 2.476     -@%-                                   +@#
+2024-01-30T18:43:11Z: #21 2.476    =@#.       :-       =:    :=+==:         :%@:
+2024-01-30T18:43:11Z: #21 2.476   =@*         +@#-   :%@=  =@%+==*@@:        .@%.
+2024-01-30T18:43:11Z: #21 2.476   @@.          :@@* +@%   :@%   *@@=          :@%
+2024-01-30T18:43:11Z: #21 2.476  #@-             =@@@+    +@- =%@*.:+:         *@-
+2024-01-30T18:43:11Z: #21 2.476 =@#               =@+     .@@%@=  :@%.         -@*
+2024-01-30T18:43:11Z: #21 2.476 %@+               -@+      .*@@#%@%+.           @%
+2024-01-30T18:43:11Z: #21 2.476 @@=                                             @@
+2024-01-30T18:43:11Z: #21 2.476 @@+           #@+.    +@+ :%%%%@@%%%%=          @@
+2024-01-30T18:43:11Z: #21 2.476 +@*            -%@*:+@#:       %@.             :@#
+2024-01-30T18:43:11Z: #21 2.476  @@.             :@@@=         %@.             +@=
+2024-01-30T18:43:11Z: #21 2.476  -@#            *@@=%@+        %@.             @@.
+2024-01-30T18:43:11Z: #21 2.476   *@-         =%@*.  +@%-      %@.            #@-
+2024-01-30T18:43:11Z: #21 2.476    %@-        -=       +:      ==            *@=
+2024-01-30T18:43:11Z: #21 2.476     *@*                                    :%@-
+2024-01-30T18:43:11Z: #21 2.476      -%@+.                               :*@#.
+2024-01-30T18:43:11Z: #21 2.476        =#@*:                           -#@#:
+2024-01-30T18:43:11Z: #21 2.476          :*@%+:                     -*@%=
+2024-01-30T18:43:11Z: #21 2.476             -+%@#*=-:.       .:-+*%@#=.
+2024-01-30T18:43:11Z: #21 2.476                 :-+*#%@@@@@@@%#*=-.
+2024-01-30T18:43:11Z: #21 2.476 
+2024-01-30T18:43:11Z: #21 2.476       Built with the Yext SSG Plugin
+2024-01-30T18:43:11Z: #21 2.476 
+2024-01-30T18:43:12Z: #21 2.479 - Cleaning build artifacts
+2024-01-30T18:43:12Z: #21 2.480 ✖ [4ms] Nothing to clean
+2024-01-30T18:43:12Z: #21 2.504 - Copying Yext plugin files
+2024-01-30T18:43:12Z: #21 2.506 ✔ [3ms] Successfully copied Yext plugin files
+2024-01-30T18:43:12Z: #21 2.507 - Generating entry-points for hydration
+2024-01-30T18:43:12Z: #21 2.536 ✔ [29ms] Generated 15 hydration entry-points
+2024-01-30T18:43:12Z: #21 2.536 - Injecting template renderer.
+2024-01-30T18:43:12Z: #21 2.537 ✔ [1ms] Injected template renderer.
+2024-01-30T18:43:12Z: #21 2.578 transforming...
+2024-01-30T18:43:20Z: #21 10.74 Browserslist: caniuse-lite is outdated. Please run:
+2024-01-30T18:43:20Z: #21 10.74   npx update-browserslist-db@latest
+2024-01-30T18:43:20Z: #21 10.74   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2024-01-30T18:43:28Z: #21 19.08 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.09 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.11 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.13 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.13 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.13 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.14 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.14 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.15 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:28Z: #21 19.16 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:40Z: #21 31.02 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:40Z: #21 31.02 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:40Z: #21 31.02 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:40Z: #21 31.03 Module level directives cause errors when bundled, 'use client' was ignored.
+2024-01-30T18:43:58Z: #21 48.79 ✓ 2826 modules transformed.
+2024-01-30T18:43:59Z: #21 50.13 rendering chunks...
+2024-01-30T18:44:00Z: #21 51.00 dist/plugin/manifest.ts                              0.94 KiB
+2024-01-30T18:44:00Z: #21 51.00 dist/plugin/mod.ts                                   0.41 KiB
+2024-01-30T18:44:00Z: #21 51.00 dist/assets/static/ski-sign-c41260eb.avif            106.68 KiB
+2024-01-30T18:44:00Z: #21 51.00 dist/assets/static/ski-lift-7f30401f.jpeg            327.63 KiB
+2024-01-30T18:44:00Z: #21 51.00 dist/assets/static/max-118bd25d.jpeg                 270.47 KiB
+2024-01-30T18:44:00Z: #21 51.00 dist/assets/static/ajax-loader-e7b44c86.gif          4.08 KiB
+2024-01-30T18:44:00Z: #21 51.00 dist/assets/static/slick-12459f22.svg                2.10 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/manifest.json                                   18.36 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/hydrate/404.59915480.js                  0.24 KiB / gzip: 0.20 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/server/404.f6317a4c.js                   1.56 KiB / gzip: 0.81 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/hydrate/article.5f1e1dba.js              0.36 KiB / gzip: 0.25 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/server/article.160414cc.js               2.12 KiB / gzip: 1.03 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/hydrate/blog-home.b59cee90.js            0.40 KiB / gzip: 0.26 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/server/blog-home.9a024078.js             4.01 KiB / gzip: 1.57 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/renderer/templateRenderer.js             24.02 KiB / gzip: 9.28 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/hydrate/blog.3cf4250c.js                 0.46 KiB / gzip: 0.28 KiB
+2024-01-30T18:44:00Z: #21 51.01 dist/assets/server/blog.5922ab9d.js                  3.19 KiB / gzip: 1.41 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/cart.5d0d0402.js                 0.41 KiB / gzip: 0.28 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/cart.08facb47.js                  4.67 KiB / gzip: 1.83 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/category-search.6ed6267f.js       2.76 KiB / gzip: 1.20 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/category-search.496c0874.js      0.51 KiB / gzip: 0.31 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/checkout.dee7d2af.js             0.37 KiB / gzip: 0.26 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/home.bbd8f52e.js                 0.37 KiB / gzip: 0.26 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/checkout.5abd4791.js              11.19 KiB / gzip: 3.56 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/order-summary.c1797a50.js        0.42 KiB / gzip: 0.28 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/product.7edc7cb8.js              0.73 KiB / gzip: 0.38 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/order-summary.f1a2214e.js         7.17 KiB / gzip: 2.52 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/results.78585a87.js               1.59 KiB / gzip: 0.85 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/home.a8864702.js                  23.50 KiB / gzip: 7.81 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/results.1c218146.js              0.50 KiB / gzip: 0.31 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/robots.c5a02b42.js                0.09 KiB / gzip: 0.10 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/ski-finder.7069333c.js           0.25 KiB / gzip: 0.21 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/store.cb457511.js                0.57 KiB / gzip: 0.33 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/ski-finder.d759328e.js            6.66 KiB / gzip: 2.59 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/stores.d90f67e7.js               0.40 KiB / gzip: 0.27 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/store.11b28268.js                 5.39 KiB / gzip: 2.37 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/hydrate/support-home.48959ae0.js         0.33 KiB / gzip: 0.24 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/preload-helper-094304c8.js        0.57 KiB / gzip: 0.39 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/support-home.d08a0d9f.js          5.37 KiB / gzip: 1.77 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/NoSsr-ffcf28c6.js                 4.41 KiB / gzip: 1.85 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/iconBase-e05305fb.js              1.52 KiB / gzip: 0.77 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/stores.4bf1a794.js                11.94 KiB / gzip: 4.75 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/formatDate-689194ca.js            0.11 KiB / gzip: 0.12 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/ski-lift-69bece9a.js              0.06 KiB / gzip: 0.08 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/index-7dda59da.js                 8.04 KiB / gzip: 3.30 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/max-3296c996.js                   0.06 KiB / gzip: 0.08 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/Pagination-ab0eda2e.js            3.08 KiB / gzip: 1.29 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/index-02ebb1bb.js                 1.26 KiB / gzip: 0.59 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/useCartActions-e9e818c5.js        0.44 KiB / gzip: 0.29 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/FilteredResults-0ba363f9.js       1.13 KiB / gzip: 0.67 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/formatCurrency-b9b0f260.js        0.09 KiB / gzip: 0.10 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/ProductCard-adba6e31.js           1.32 KiB / gzip: 0.60 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/use-tracked-pointer-3f8d525e.js   1.06 KiB / gzip: 0.55 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/SearchResults-0a4f9fc7.js         9.02 KiB / gzip: 3.34 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/ChevronDownIcon-96919e16.js       8.50 KiB / gzip: 3.26 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/CheckIcon-6d12916e.js             1.87 KiB / gzip: 0.95 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/formatPhoneNumber-e2a0abf5.js     0.08 KiB / gzip: 0.08 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/v4-34f2e284.js                    0.86 KiB / gzip: 0.46 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/StripeProvider-ad9c1309.js        10.65 KiB / gzip: 4.35 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/useQuery.esm-ff0dfe01.js          9.72 KiB / gzip: 3.18 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/Reviews-ba4d888d.js               18.19 KiB / gzip: 6.19 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/product-e576b1de.css              13.08 KiB / gzip: 3.77 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/mapbox-gl-bea1280a.css            36.00 KiB / gzip: 4.75 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/transformSiteData-8b34daa2.css    81.65 KiB / gzip: 13.09 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/server/product.ff68f2db.js               80.62 KiB / gzip: 23.37 KiB
+2024-01-30T18:44:00Z: #21 51.02 dist/assets/static/index-59dcfd41.js                 105.71 KiB / gzip: 32.05 KiB
+2024-01-30T18:44:00Z: #21 51.14 dist/assets/static/transformSiteData-74039a1c.js     1937.15 KiB / gzip: 557.61 KiB
+2024-01-30T18:44:00Z: #21 51.14 
+2024-01-30T18:44:00Z: #21 51.14 (!) Some chunks are larger than 500 KiB after minification. Consider:
+2024-01-30T18:44:00Z: #21 51.14 - Using dynamic import() to code-split the application
+2024-01-30T18:44:00Z: #21 51.14 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/guide/en/#outputmanualchunks
+2024-01-30T18:44:00Z: #21 51.14 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2024-01-30T18:44:00Z: #21 51.14 - Validating template modules
+2024-01-30T18:44:01Z: #21 51.48 ✔ [336ms] Validated template modules
+2024-01-30T18:44:01Z: #21 51.48 - Writing features.json
+2024-01-30T18:44:01Z: #21 51.48 ✔ [1ms] Successfully wrote features.json
+2024-01-30T18:44:01Z: #21 51.48 - Writing manifest.json
+2024-01-30T18:44:01Z: #21 51.48 ✔ [2ms] Successfully wrote manifest.json
+2024-01-30T18:44:01Z: #21 51.48 - Writing functionMetadata.json
+2024-01-30T18:44:01Z: #21 51.51 Error: functions/api/payment-intent.ts does not contain a default export.
+2024-01-30T18:44:01Z: #21 51.51 Error: Cannot find module 'https://deno.land/x/yextpages@plugins@1.0.0-beta.3/mod.ts'
+2024-01-30T18:44:01Z: #21 51.51 Require stack:
+2024-01-30T18:44:01Z: #21 51.51 - /opt/buildhome/repo/node_modules/@yext/pages/dist/vite-plugin/build/closeBundle/0si63Qql-cevznHAvcqjK.js
+2024-01-30T18:44:01Z: #21 51.51 ✔ [28ms] Successfully wrote functionMetadata.json
+2024-01-30T18:44:01Z: #21 DONE 51.8s
+2024-01-30T18:44:01Z: 
+2024-01-30T18:44:01Z: #22 [15/16] RUN /scripts/mark-builderror.sh /scripts/bin/artifactbundler --root=/opt/buildhome/repo --cfg='config.json' --outputprefix=/opt/buildhome/artifacts
+2024-01-30T18:44:01Z: #22 sha256:f3b4d9fcbad8a5a8410f61d06773e05e7c6a50b4dd387d94451d9745bfbed5e4
+2024-01-30T18:44:03Z: #22 1.833 I0130 18:44:03.139119 main.go:85] using artifact structure config
+2024-01-30T18:44:03Z: #22 DONE 2.0s
+2024-01-30T18:44:12Z: 
+2024-01-30T18:44:12Z: #23 exporting to image
+2024-01-30T18:44:12Z: #23 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00
+2024-01-30T18:44:12Z: #23 exporting layers done
+2024-01-30T18:44:12Z: #23 writing image sha256:2cdd960dac5911900c8d92003ded3c4614edd829d942e403bc692203ef01974c 0.0s done
+2024-01-30T18:44:12Z: #23 naming to docker.io/yextci-build-artifacts/2067312 done
+2024-01-30T18:44:12Z: #23 DONE 0.1s
+2024-01-30T18:44:12Z: 
+2024-01-30T18:44:12Z: #24 exporting cache
+2024-01-30T18:44:12Z: #24 sha256:2700d4ef94dee473593c5c614b55b2dedcca7893909811a8f2b48291a1f581e4
+2024-01-30T18:44:12Z: #24 preparing build cache for export done
+2024-01-30T18:44:12Z: #24 DONE 0.0s
+2024-01-30T18:44:13Z: 611cee00b424132af69988f93733c63fb1e91d7f93e0d04c16a5afe090338ecc
+2024-01-30T18:44:14Z: Retrieving file /artifacts-2067312-templates.tgz
+2024-01-30T18:44:16Z: Retrieving file /artifacts-2067312-static.tgz
